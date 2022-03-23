@@ -6,6 +6,7 @@ const defaultProps = {
   desc: "Hi, I'm Eper Gaboni, Philippine based SEO Specialist, Web Designer & Developer",
   imgPath: "/og.png",
 };
+
 export default function Header(Props: {
   title?: string;
   desc?: string;
