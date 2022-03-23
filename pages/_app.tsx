@@ -19,10 +19,6 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
         "%cBuilt with Next.js (React), Typescript, Tailwind CSS | Blog content using Markdown (MDX) | Deployed on Vercel",
         "color: #6af549; font-size: 14px; background: #282c34;"
       );
-      console.log(
-        "%cSource-code: https://github.com/GorvGoyl/Personal-Site-Gourav.io",
-        "color: #6af549; font-size: 14px; background: #282c34;"
-      );
     }
 
     return () => {

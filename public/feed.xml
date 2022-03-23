@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Gourav Goyal</title>
+        <title>Eper Gaboni</title>
         <link>https://gourav.io</link>
-        <description>Blog - Gourav Goyal</description>
+        <description>Blog - Eper Gaboni</description>
         <lastBuildDate>Thu, 11 Nov 2021 12:58:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for https://gourav.io</generator>
         <language>en</language>
         <image>
-            <title>Gourav Goyal</title>
+            <title>Eper Gaboni</title>
             <url>https://gourav.io/favicon-32x32.png</url>
             <link>https://gourav.io</link>
         </image>
-        <copyright>All rights reserved 2021, Gourav Goyal</copyright>
+        <copyright>All rights reserved 2021, Eper Gaboni</copyright>
         <atom:link href="https://gourav.io/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[I received first-ever donation on my open-source side project and it felt great!]]></title>

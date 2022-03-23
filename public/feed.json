@@ -1,12 +1,12 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Gourav Goyal",
+    "title": "Eper Gaboni",
     "home_page_url": "https://gourav.io",
     "feed_url": "https://gourav.io/feed.json",
-    "description": "Blog - Gourav Goyal",
+    "description": "Blog - Eper Gaboni",
     "icon": "https://gourav.io/favicon-32x32.png",
     "author": {
-        "name": "Gourav Goyal",
+        "name": "Eper Gaboni",
         "url": "https://twitter.com/GorvGoyl"
     },
     "items": [
@@ -18,7 +18,7 @@
             "image": "https://gourav.io/img/blog/first-donation-on-open-source-side-project/og.png",
             "date_modified": "2020-12-11T00:00:00.000Z",
             "author": {
-                "name": "Gourav Goyal",
+                "name": "Eper Gaboni",
                 "url": "https://twitter.com/GorvGoyl"
             }
         },
@@ -30,7 +30,7 @@
             "image": "https://gourav.io/img/blog/git-cheatsheet/og.png",
             "date_modified": "2021-10-28T00:00:00.000Z",
             "author": {
-                "name": "Gourav Goyal",
+                "name": "Eper Gaboni",
                 "url": "https://twitter.com/GorvGoyl"
             }
         },
@@ -42,7 +42,7 @@
             "image": "https://gourav.io/img/blog/my-simple-github-project-went-viral/og.jpg",
             "date_modified": "2021-04-12T00:00:00.000Z",
             "author": {
-                "name": "Gourav Goyal",
+                "name": "Eper Gaboni",
                 "url": "https://twitter.com/GorvGoyl"
             }
         },
@@ -54,7 +54,7 @@
             "image": "https://gourav.io/img/blog/nextjs-cheatsheet/og.png",
             "date_modified": "2021-10-11T00:00:00.000Z",
             "author": {
-                "name": "Gourav Goyal",
+                "name": "Eper Gaboni",
                 "url": "https://twitter.com/GorvGoyl"
             }
         },
@@ -66,7 +66,7 @@
             "image": "https://gourav.io/img/blog/setup-vscode-to-run-debug-c-cpp-code/og.jpg",
             "date_modified": "2020-12-04T18:30:00.000Z",
             "author": {
-                "name": "Gourav Goyal",
+                "name": "Eper Gaboni",
                 "url": "https://twitter.com/GorvGoyl"
             }
         }

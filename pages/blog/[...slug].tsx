@@ -1,9 +1,8 @@
-import { Comments } from "@/components/commentBox";
 import Header from "@/components/Header";
 import { Container, LayoutType } from "@/components/layout";
 import MDXComponents from "@/components/mdxComponents";
 import { Links, Navbar } from "@/components/navbar";
-import { FORMTYPE, SubscribeForm } from "@/components/subscribe";
+
 import { Author, AuthorImg, ShareComponent } from "@/components/tags";
 import post from "@/layouts/css/post.module.scss";
 import { getMdPostSlugs } from "@/lib/getPost";
@@ -64,18 +63,8 @@ export default function Post(props: {
             </header>
             <Author date={props.matter.date} views={slugViews} />
             <MDX components={MDXComponents as any} />
-            <blockquote className="mt-14 font-normal">
-              <p>
-                Thanks for reading. Would love to hear your thoughts about it.
-                Connect with me on{" "}
-                <a href="https://twitter.com/GorvGoyl">Twitter</a>.
-                {/* and{" "}
-                <a href="https://www.linkedin.com/in/gorvgoyl/">LinkedIn</a>. */}
-              </p>
-            </blockquote>
           </article>
           <ShareComponent />
-          <SubscribeForm type={FORMTYPE.AfterArticle} />
         </main>
 
         <hr className="my-12" />
@@ -89,7 +78,6 @@ export default function Post(props: {
             </a>
           </Link>
         </div>
-        {props.matter.comments && <Comments></Comments>}
       </Container>
     </>
   );

@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import { Icon } from "@/components/icons";
 import { Container, LayoutType } from "@/components/layout";
 import { Navbar } from "@/components/navbar";
-import { FORMTYPE, SubscribeForm } from "@/components/subscribe";
+
 import { getAllPosts as getAllPostsMatter } from "@/lib/getPost";
 import { getSlugViews, readableDate, roundUpViewCount } from "@/lib/utils";
 import { FrontMatter } from "@/types/types";
@@ -37,7 +37,7 @@ export default function Blog(props: { allPosts: FrontMatter[] }): JSX.Element {
   }, [props.allPosts]);
   return (
     <>
-      <Header title="Blog - Gourav Goyal" />
+      <Header title="Blog - Eper Gaboni" />
 
       <Container layout={LayoutType.Blog}>
         <Navbar />
@@ -79,11 +79,7 @@ export default function Blog(props: { allPosts: FrontMatter[] }): JSX.Element {
                     className="flex items-center"
                     title={`Published date: ${post.date}`}
                   >
-                    <Icon
-                      type="calendar"
-                      size="11"
-                      // className="inline-block"
-                    />
+                    <Icon type="calendar" size="11" />
 
                     <div className="whitespace-nowrap ml-2">
                       {readableDate(post.date)}
@@ -93,11 +89,8 @@ export default function Blog(props: { allPosts: FrontMatter[] }): JSX.Element {
               </div>
             ))}
           </div>
-          <hr className="mb-8" />
-          <SubscribeForm type={FORMTYPE.Slim} />
         </main>
       </Container>
-      <TwitterBtn />
     </>
   );
 }

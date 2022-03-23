@@ -1,11 +1,9 @@
-import { Banner } from "@/components/banner";
-import { Comments } from "@/components/commentBox";
 import Header from "@/components/Header";
 import { Container, LayoutType } from "@/components/layout";
 import MDXComponents from "@/components/mdxComponents";
 import { Links, Navbar } from "@/components/navbar";
 import { ScrollTopBtn } from "@/components/scrollTop";
-import { FORMTYPE, SubscribeForm } from "@/components/subscribe";
+
 import { AuthorImg, ShareComponent } from "@/components/tags";
 import project from "@/layouts/css/project.module.scss";
 import { getMdPostSlugs } from "@/lib/getPost";
@@ -28,7 +26,6 @@ export default function Project(props: { matter: any; source: string }) {
       />
 
       <Container layout={LayoutType.Blog}>
-        <Banner />
         <Navbar link={Links.Blog} />
         <main className="mx-auto prose">
           <article className={`${project.css} ${md.css}`}>
@@ -36,9 +33,8 @@ export default function Project(props: { matter: any; source: string }) {
           </article>
           <ShareComponent />
           <hr className="mb-8" />
-          <SubscribeForm type={FORMTYPE.Generic} />
         </main>
-        {props.matter.comments && <Comments></Comments>}
+
         <ScrollTopBtn />
       </Container>
       <div className="flex justify-center">

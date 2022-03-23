@@ -226,7 +226,7 @@ export function ShareButton(Props: { children: any }): JSX.Element {
             onClick={(e) => {
               e.preventDefault();
               openWindowHandler(
-                `https://www.linkedin.com/shareArticle?url=${pageURL}&title=${document.title}&mini=true&source=Gourav-Goyal`,
+                `https://www.linkedin.com/shareArticle?url=${pageURL}&title=${document.title}&mini=true&source=Eper-Gaboni`,
                 "linkedin-share-dialog",
                 "width=626,height=626"
               );
@@ -312,33 +312,22 @@ export function TwitterIcon(Props: {
   title?: string;
 }): JSX.Element {
   const defaultCls = "inline w-3 h-3 align-baseline m-0 ml-1";
-  const title = Props.title ?? "@GorvGoyl on twitter";
+  const title = Props.title ?? "@epergaboni on twitter";
   const cls = Props.class ?? defaultCls;
   return <img src="/twitter.svg" className={cls} width="" alt={title} />;
 }
 export function AuthorImg(): JSX.Element {
   return (
     <div className="flex items-center text-base">
-      <a href="https://gourav.io">
+      <a href="https://epergaboni.com">
         <img
           className="w-14 rounded-full mr-4 my-3"
-          src="/gourav.jpg"
-          alt="Gourav Goyal"
+          src="/eper.jpg"
+          alt="Eper Gaboni"
         />
       </a>
       <div className="">
-        <p className="m-0 font-medium">Gourav Goyal</p>
-        <div className="">
-          <a
-            className="font-normal"
-            href="https://twitter.com/GorvGoyl"
-            rel="noopener"
-            target="blank"
-          >
-            GorvGoyl
-            <TwitterIcon class="inline w-3 h-3 align-baseline m-0 ml-1" />
-          </a>
-        </div>
+        <p className="m-0 font-medium">Eper Gaboni</p>
       </div>
     </div>
   );
@@ -374,9 +363,6 @@ export function Author(props: { date: string; views: string }): JSX.Element {
             </div>
           </ShareButton>
         </div>
-        {/* <div className="text-gray-500 flex items-center space-x-3 text-sm">
-          <ShareIcon />
-        </div> */}
       </div>
     </div>
   );

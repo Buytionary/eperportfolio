@@ -8,7 +8,7 @@ export enum Links {
 const NavItem = (Props: { href: string; title: string; text: string }) => (
   <Link href={Props.href}>
     <a className="inline-block py-4 px-2" title={Props.title}>
-      {Props.text === "Gourav Goyal" ? (
+      {Props.text === "Eper Gaboni" ? (
         <div
           className="bg-clip-text text-transparent font-semibold tracking-wide"
           style={{
@@ -29,7 +29,7 @@ export function Navbar(Props: { link?: Links }): JSX.Element {
   return (
     <nav className="text-xl mb-12 flex border-b-2 justify-end">
       <div className="mr-auto">
-        <NavItem href="/" title="Home" text="Gourav Goyal" />
+        <NavItem href="/" title="Home" text="Eper Gaboni" />
       </div>
       {Props.link === Links.Blog && (
         <div>

@@ -5,24 +5,6 @@ const redirects = async () => [
       "https://chrome.google.com/webstore/detail/notion-boost/eciepnnimnjaojlkcpdpcgbfkpcagahd",
     permanent: true,
   },
-
-  {
-    source: "/firefox",
-    destination: "https://addons.mozilla.org/en-US/firefox/addon/notion-boost/",
-    permanent: true,
-  },
-  {
-    source: "/cv",
-    destination:
-      "https://docs.google.com/document/d/1DKDnTMPHXx5o9HE1cWZvChabRJxmI6N6OnFIflVOtQs/edit?usp=sharing",
-    permanent: true,
-  },
-  {
-    source: "/cover-letter",
-    destination:
-      "https://docs.google.com/document/d/1LxSXxMXmxN2zfCcqShWSvCCIWsrnH1zY5yKA3E6XZPk/edit?usp=sharing",
-    permanent: true,
-  },
 ];
 
 const headers = async () => [
@@ -37,44 +19,15 @@ const headers = async () => [
   },
 ];
 
-module.exports =
-  // NextConfig
-  {
-    // disabling i18n due to mdx path error
-    // i18n: {
-    //   locales: ["en-US"],
-    //   defaultLocale: "en-US",
-    // },
-    future: {
-      strictPostcssConfiguration: true,
-    },
-    reactStrictMode: true,
-    pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
-    webpack: (config, { dev, isServer }, options) => {
-      // if (isServer) {
-      //   if (!dev) {
-      //     require("./scripts/generate-sitemap.js");
-      //     require("./scripts/generate-rss.js");
-      //   }
-      // }
-
-      // config.module.rules.push({
-      //   test: /\.(png|jpe?g|gif|mp4|svg)$/i,
-      //   use: [
-      //     {
-      //       loader: "file-loader",
-      //       options: {
-      //         publicPath: "/_next",
-      //         // name: "static/media/[name].[hash].[ext]",
-      //         // todo: remove redundant `pages` path from [path] https://github.com/webpack-contrib/file-loader#function-1
-      //         name: "static/media/[path][name].[ext]",
-      //       },
-      //     },
-      //   ],
-      // });
-
-      return config;
-    },
-    redirects,
-    headers,
-  };
+module.exports = {
+  future: {
+    strictPostcssConfiguration: true,
+  },
+  reactStrictMode: true,
+  pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
+  webpack: (config, { dev, isServer }, options) => {
+    return config;
+  },
+  redirects,
+  headers,
+};

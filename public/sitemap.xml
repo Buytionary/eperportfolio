@@ -2,43 +2,22 @@
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
             
                         <url>
-                            <loc>https://gourav.io/blog</loc>
+                            <loc>https://epergaboni.com/blog</loc>
                         </url>
                     
                         <url>
-                            <loc>https://gourav.io</loc>
+                            <loc>https://epergaboni.com</loc>
                         </url>
                     
+                         
                         <url>
-                            <loc>https://gourav.io/clone-wars</loc>
+                            <loc>https://epergaboni.com/blog/git-cheatsheet</loc>
                         </url>
                     
+                       
                         <url>
-                            <loc>https://gourav.io/notion-boost</loc>
+                            <loc>https://epergaboni.com/blog/nextjs-cheatsheet</loc>
                         </url>
-                    
-                        <url>
-                            <loc>https://gourav.io/blog/first-donation-on-open-source-side-project</loc>
-                        </url>
-                    
-                        <url>
-                            <loc>https://gourav.io/blog/git-cheatsheet</loc>
-                        </url>
-                    
-                        <url>
-                            <loc>https://gourav.io/blog/my-simple-github-project-went-viral</loc>
-                        </url>
-                    
-                        <url>
-                            <loc>https://gourav.io/blog/nextjs-cheatsheet</loc>
-                        </url>
-                    
-                        <url>
-                            <loc>https://gourav.io/blog/setup-vscode-to-run-debug-c-cpp-code</loc>
-                        </url>
-                    
-                        <url>
-                            <loc>https://gourav.io/notion-boost/whats-new</loc>
-                        </url>
+                     
                     
         </urlset>

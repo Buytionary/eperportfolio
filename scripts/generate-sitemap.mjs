@@ -1,6 +1,6 @@
 import { writeFileSync } from "fs";
 import { globby } from "globby";
-const homeURL = "https://gourav.io";
+const homeURL = "https://epergaboni.com";
 
 (async () => {
   try {

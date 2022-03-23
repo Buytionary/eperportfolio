@@ -7,7 +7,7 @@ export function TwitterBtn(): JSX.Element {
           target="_blank"
           rel="noopener"
           className="twitter-btn text-white no-underline"
-          title="Follow 'Gourav Goyal' on Twitter"
+          title="Follow 'Eper Gaboni' on Twitter"
         >
           <img
             src="/twitter-light.svg"

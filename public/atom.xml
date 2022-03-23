@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gourav.io</id>
-    <title>Gourav Goyal</title>
+    <title>Eper Gaboni</title>
     <updated>2021-11-11T12:58:43.008Z</updated>
     <generator>Feed for https://gourav.io</generator>
     <author>
-        <name>Gourav Goyal</name>
+        <name>Eper Gaboni</name>
         <email>hey@gourav.io</email>
         <uri>https://twitter.com/GorvGoyl</uri>
     </author>
     <link rel="alternate" href="https://gourav.io"/>
     <link rel="self" href="https://gourav.io/atom.xml"/>
-    <subtitle>Blog - Gourav Goyal</subtitle>
+    <subtitle>Blog - Eper Gaboni</subtitle>
     <logo>https://gourav.io/favicon-32x32.png</logo>
     <icon>https://gourav.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Gourav Goyal</rights>
+    <rights>All rights reserved 2021, Eper Gaboni</rights>
     <entry>
         <title type="html"><![CDATA[I received first-ever donation on my open-source side project and it felt great!]]></title>
         <id>I received first-ever donation on my open-source side project and it felt great!</id>

@@ -7,7 +7,7 @@ import React from "react";
 export default function Blog(): JSX.Element {
   return (
     <>
-      <Header title="Gourav Goyal - Page not found" />
+      <Header title="Eper Gaboni - Page not found" />
 
       <Container layout={LayoutType.Blog}>
         <Navbar link={Links.Blog} />
@@ -16,11 +16,11 @@ export default function Blog(): JSX.Element {
             <h1>Oops, Page not found :(</h1>
             <h3>
               <Link href="/">
-                <a title="gourav.io">Go to Homepage</a>
+                <a title="epergaboni.com">Go to Homepage</a>
               </Link>
             </h3>
             <h3>
-              Or <br /> Let me know at hey@gourav.io
+              Or <br /> Let me know at hi@epergaboni.com
             </h3>
           </header>
           <div />

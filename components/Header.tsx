@@ -2,8 +2,8 @@ import { usePath } from "@/hooks/customHooks";
 import { NextSeo } from "next-seo";
 
 const defaultProps = {
-  title: "Gourav Goyal",
-  desc: "I'm a tech founder, digital nomad, and a fun guy to hang around with. I like to build things that others find helpful.",
+  title: "Eper Gaboni",
+  desc: "Hi, I'm Eper Gaboni, Philippine based SEO Specialist, Web Designer & Developer",
   imgPath: "/og.png",
 };
 export default function Header(Props: {
@@ -15,16 +15,16 @@ export default function Header(Props: {
   const description = Props.desc || defaultProps.desc;
   const ogImgRelativePath = Props.imgPath || defaultProps.imgPath;
   const local = "http://localhost:3000";
-  const siteURL = "https://gourav.io";
-  // const siteURL = isProd ? "https://gourav.io" : local;
+  const siteURL = "https://epergaboni.com";
+
   const ogImageURL = `${siteURL}${ogImgRelativePath}`;
 
   // to get url for both fixed and dynamic([slug]) paths
   const relativeURL = usePath();
 
   const pageURL = relativeURL === "/" ? siteURL : siteURL + relativeURL;
-  const twitterHandle = "@GorvGoyl";
-  const siteName = "Gourav.io";
+  const twitterHandle = "@epergaboni";
+  const siteName = "EperGaboni.Com";
 
   return (
     <>
@@ -43,7 +43,7 @@ export default function Header(Props: {
               url: ogImageURL,
               width: 1200,
               height: 630,
-              alt: "Gourav.io - personal site and blog",
+              alt: "EperGaboni.Com - personal site and blog",
             },
           ],
           site_name: siteName,
@@ -54,10 +54,6 @@ export default function Header(Props: {
           cardType: "summary_large_image",
         }}
         additionalMetaTags={[
-          {
-            property: "monetization",
-            content: "$ilp.uphold.com/QaUmZpmzmDzA",
-          },
           {
             property: "author",
             content: defaultProps.title,
@@ -88,16 +84,6 @@ export default function Header(Props: {
             rel: "icon",
             href: `${siteURL}/favicon.ico`,
           },
-
-          // {
-          //   rel: "apple-touch-icon",
-          //   href: "https://www.test.ie/touch-icon-ipad.jpg",
-          //   sizes: "76x76",
-          // },
-          // {
-          //   rel: "manifest",
-          //   href: "/site.manifest",
-          // },
         ]}
       />
     </>

@@ -3,13 +3,13 @@ import { existsSync, readdirSync, readFileSync, writeFileSync } from "fs";
 import matter from "gray-matter";
 import { join } from "path";
 
-const homeUrl = "https://gourav.io";
+const homeUrl = "https://epergaboni.com";
 const imgOutputPath = `${homeUrl}/img/blog/`;
 
 const author = {
-  name: "Gourav Goyal",
-  email: "hey@gourav.io",
-  link: "https://twitter.com/GorvGoyl",
+  name: "Eper Gaboni",
+  email: "hi@epergaboni.com",
+  link: "https://twitter.com/epergaboni",
 };
 
 // picks stored og.jpg/og.png in blogpost folder, if not found use default site og.png
@@ -40,15 +40,15 @@ function generateRSS() {
   try {
     console.log("generating blog feed...");
     const feed = new Feed({
-      title: "Gourav Goyal",
-      description: "Blog - Gourav Goyal",
+      title: "Eper Gaboni",
+      description: "Blog - Eper Gaboni",
       id: homeUrl,
       link: homeUrl,
       language: "en",
       image: `${homeUrl}/favicon-32x32.png`,
       favicon: `${homeUrl}/favicon.ico`,
       generator: `Feed for ${homeUrl}`,
-      copyright: `All rights reserved ${new Date().getFullYear()}, Gourav Goyal`,
+      copyright: `All rights reserved ${new Date().getFullYear()}, Eper Gaboni`,
       feedLinks: {
         rss: `${homeUrl}/feed.xml`,
         json: `${homeUrl}/feed.json`,
@@ -77,7 +77,7 @@ function generateRSS() {
           return;
         }
 
-        const postURL = `https://gourav.io/blog/${slug}`;
+        const postURL = `https://epergaboni.com/blog/${slug}`;
 
         const postDir = join(process.cwd(), "content", "blog", slug);
         const ogPublicPath = getOgPublicPath(postDir, slug);

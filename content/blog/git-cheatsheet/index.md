@@ -7,9 +7,9 @@ mobileToc: true
 comments: true
 ---
 
-When I collaborate with others using Git, I often have to google to find the right git commands for various situations.
-Situations like how to pull changes without committing local files, save uncommitted changes in the current branch and switch, add new changes to the last commit, reset my local branch to main, revert the latest commit from local and remote, etc.
-So, I decided to write these down in one place as a handy cheatsheet so that it's easier for me (and hopefully others) to recall and use.
+When I collaborate with others using Git, I frequently have to use Google to locate the appropriate git commands for different scenarios.
+ 
+So, in order for me (and perhaps others) to remember and use these, I decided to write them down in one place as a helpful cheatsheet.
 
 ### Jargon
 
@@ -143,10 +143,6 @@ git push origin HEAD (push local changes to remote branch with same name)
 ```
 git pull origin main (pull latest changes from remote main branch into local dev branch)
 ```
-
-### Download big repository on poor bandwidth
-
-[https://stackoverflow.com/questions/34389446/how-do-i-download-a-large-git-repository/52090961\#52090961](https://stackoverflow.com/questions/34389446/how-do-i-download-a-large-git-repository/52090961#52090961)
 
 ####
 
@@ -647,7 +643,3 @@ git config --system --unset credential.helper
 #### markdown cheatsheet
 
 - [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-
-## Contribute to this cheatsheet
-
-👋 If you'd like to collaborate on this, please [edit here and submit your changes](https://github.com/GorvGoyl/Personal-Site-Gourav.io/blob/main/content/blog/git-cheatsheet/index.md).
